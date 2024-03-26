@@ -1,9 +1,9 @@
-package com.example.medipet.doctors;
+package com.example.medipet.exceptions;
 
 import java.util.UUID;
 
 public class DoctorNotFoundException extends RuntimeException {
-    DoctorNotFoundException(UUID id){
+    public DoctorNotFoundException(UUID id){
         super("Could not find Doctor: " + id);
     }
 }
